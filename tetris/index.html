@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+		<style>
+		    html{
+		    	overscroll-behavior: none;
+		    	height: 100%;
+		    	width: 100%;
+		    	margin: 0;
+		    	padding: 0;
+		    }
+		</style>
+		<title>Tetris</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<div>
+							<h1>TETRIS</h1>
+							<canvas id="myCanvas" width="500" height="500"></canvas>
+						</div>
+					</td>
+					<td>
+						<div style="padding-left:30px;">
+							<h3 style="color:red" id="score"></h3>
+							<h3>Move left:</h3>
+							<img src="keyboard_key_left.png" width="48" height="48">
+							<h3>Move right:</h3>
+							<img src="keyboard_key_right.png" width="48" height="48">
+							<h3>Rotate:</h3>
+							<img src="keyboard_key_up.png" width="48" height="48">
+							<h3>Move down:</h3>
+							<img src="keyboard_key_down.png" width="48" height="48">
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<script src="Draw.js"></script>
+		<script src="Tile.js"></script>
+		<script src="Tetromino.js"></script>
+		<script src="Tetris.js"></script>
+		<script src="sketch.js"></script>
+		<style>
+			*{
+				font-family: sans-serif;
+			}
+			div, table{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+			}
+		</style>
+	</body>
+</html>
